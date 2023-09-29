@@ -1,19 +1,29 @@
-import s from './Card.module.css';
+import style from './Card.module.css';
 import { Link } from 'react-router-dom';
 
 const Card = ({name, img, genres, id, rate}) => {
     return(
-        <div className={s.container}>
-            <Link style={{ textDecoration: 'none' }} to={`/detail/${id}`}>
-                <div className={s.card}>
-                    <img className={s.img} src={img} alt={name} />
-                    <h2 className={s.name}>{name}</h2>
-                    <span className={s.rate}>⭐{rate}</span>
-                    <div className={s.genrebox}>
+        <div className={style.container}>
+            <Link className={ style.container_link } to={`/detail/${id}`}>
+                <div className={style.card}>
+                    <img className={style.img} src={img} alt={name} />
+                    <h2 className={style.name}>{name}</h2>
+                    <span className={style.rate}>⭐{rate}</span>
+                    <div className={style.genrebox}>
                         {
                             genres.length > 7 ?
-                            genres?.slice(0, 7).map((genre) => (<div><span className={s.genre}>{genre}</span></div>))
-                            : genres?.map((genre) => (<div><span className={s.genre}>{genre}</span></div>))
+                            genres?.slice(0, 7).map((genre) => (
+                                <div className={style.container_genre}>
+                                    <span className={style.genre}>
+                                        {genre}
+                                    </span>
+                                </div>))
+                            : genres?.map((genre) => (
+                                <div className={style.container_genre}>
+                                    <span className={style.genre}>
+                                        {genre}
+                                    </span>
+                                </div>))
                         }
                     </div>
                 </div>

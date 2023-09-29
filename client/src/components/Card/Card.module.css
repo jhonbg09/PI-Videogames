@@ -1,20 +1,6 @@
-:root{
-    --button-height: 3rem;
-    --color-text: rgba(0,0,0,.25);
-    --color-text-shadow: rgba(255,255,255,.15);
-    --color-page-bg:#B9B5AA;
-    --color-bg:#899095;
-    --color-bg-light:#969DA3;
-    --color-bg-dark: #7D878F;
-    --color-overlay-light: rgba(255,255,255,.2);
-    --color-overlay-medium: rgba(0,0,0,.1);
-    --color-overlay-dark: rgba(0,0,0,.2);
-    --color-tab-focus: rgba(255,255,255,.15);
-  }
 
-.container{
-    width: 100%;
-    max-width: 1200px;
+.container_link{
+    max-width: 120rem;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -22,19 +8,26 @@
     align-items: center;
     justify-content: center;
     margin: auto;
+    text-decoration: none;
 }
 
+
+
 .card {
-    display: grid;
-    width: 430px;
-    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 25rem;
+    height: 35rem;
     border-radius: 15px;
-    box-shadow: 0 2px 2px rgba(43, 42, 42, 0);
+    
+    
     overflow: hidden;
-    margin: 20px;
-    background:var(--color-bg);
+    background-color: rgba(124, 3, 168, 0.9);
     text-align: center;
-    transition: all 0.25s;
+    transition: 0.2s ease-in-out;
     gap: 5px
 }
 
@@ -52,16 +45,17 @@
 .name{
     margin: 5px;
     height: fit-content;
-    color:rgba(0, 0, 0, 0.39);
+    color: white;
     text-shadow: 1px 1px rgba(255,255,255,.15);  
     font-family: sans-serif;
     font-weight:800;
+    
 }
 
 .rate{
     margin: 0px;
     font-size: 25px;
-    color:rgba(216, 209, 76, 0.534); 
+    color:rgba(216, 209, 76, 0.948); 
     font-family: sans-serif;
     font-weight:800;
     
@@ -69,8 +63,23 @@
 
 .genre{
     margin: 10px;
-    color:rgba(0, 0, 0, 0.308);
+    color:white;
     text-shadow: 1px 1px rgba(255,255,255,.15);  
     font-family: sans-serif;
     font-weight:800;
+    height: 100%;
+    
+}
+
+.container_genre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid black;
+    height: 2rem;
+    background-color: #200D32;
+    border-radius: 5px;
+    margin-bottom: 1px;
+    padding: 1px;
 }

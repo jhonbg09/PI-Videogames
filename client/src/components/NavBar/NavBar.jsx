@@ -1,4 +1,4 @@
-import s from "./NavBar.module.css"
+import style from "./NavBar.module.css"
 import {Link} from "react-router-dom";
 import Search from "../search/search";
 import icon from "../../assets/favicon.ico"
@@ -13,18 +13,18 @@ const NavBar =({setInput, setPage}) => {
         setPage(1)
     }
     return (
-            <nav className={s.nav}>
+            <nav className={style.nav}>
                 <div>
-                <Link onClick={handleHome} className={s.logocont} style={{ textDecoration: 'none' }} to="/videogames">
-                    <img className={s.logo} src={icon} alt="logo" />
+                <Link onClick={handleHome} className={style.logocont} style={{ textDecoration: 'none' }} to="/videogames">
+                    <img className={style.logo} src={icon} alt="logo" />
                 </Link>
                 </div>
                 <div>
-                    <Search setInput={setInput} setPage={setPage}/>
+                    <Search className={style.search_nav} setInput={setInput} setPage={setPage}/>
                 </div>
                 <div>
                     <Link style={{ textDecoration: 'none' }} to="/form">
-                        <button className={s.create}>Create Game</button>
+                        <button className={style.create}>Create Game</button>
                     </Link>
                 </div>
             </nav>

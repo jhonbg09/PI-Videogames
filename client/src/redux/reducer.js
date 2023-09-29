@@ -10,7 +10,7 @@ import { GET_VIDEOGAMES,
          RESET_FILTERS,
          GET_PLATFORMS,
          CREATE_GAME,
-         GET_BY_RATE_P
+        //  GET_BY_RATE_P
         } from "./actions";
 
 const initialState = {

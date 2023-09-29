@@ -1,4 +1,4 @@
-import s from "./Form.module.css";
+import style from "./Form.module.css";
 import {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux"
 import {Link} from 'react-router-dom'
@@ -99,24 +99,24 @@ const Form = () => {
     };
 
     return (
-        <div className={s.container}>
-            <div className={s.buttonH}>
+        <div className={style.container_form}>
+            <div className={style.container_button}>
                 <Link to="/videogames">
-                    <button className={s.homeb}>Return to videoGames</button>
+                    <button className={style.homeb}>Return to videoGames</button>
                 </Link>
             </div>
-            <div className={s.formC}>
-                <form className={s.form} onSubmit={handleCreate}>
-                    <h2 className={s.name}>Create Videogame</h2> 
-                    <label><span className={s.title}>Name: </span></label>
+            <div className={style.container_form_create}>
+                <form className={style.form} onSubmit={handleCreate}>
+                    <h2 className={style.name}>Create Videogame</h2> 
+                    <label><span className={style.title}>Name: </span></label>
                     <input 
                         type="text" 
                         name="name"
                         onChange={handleInput}
                         autoComplete="off"
                         />
-                    {error.name && <span className={s.error}>{error.name}</span>}
-                    <label><span className={s.title}>Description: </span></label>
+                    {error.name && <span className={style.error}>{error.name}</span>}
+                    <label><span className={style.title}>Description: </span></label>
                     <input 
                         type="text"
                         name="description"
@@ -124,14 +124,14 @@ const Form = () => {
                         autoComplete="off"
                     />
                     {error.description && <span>{error.description}</span>}
-                    <label><span className={s.title}>Released: </span></label>
+                    <label><span className={style.title}>Released: </span></label>
                     <input 
                         type="text"
                         name="released"
                         onChange={handleInput}
                         autoComplete="off"
                     />
-                    <label><span className={s.title}>Rating: </span></label>
+                    <label><span className={style.title}>Rating: </span></label>
                     <input 
                         type="text"
                         name="rating"
@@ -139,7 +139,7 @@ const Form = () => {
                         autoComplete="off"
                     />
                     {error.rating && <span>{error.rating}</span>}
-                    <label><span className={s.title}>Image: </span></label>
+                    <label><span className={style.title}>Image: </span></label>
                     <input 
                         type="text" 
                         name="img"
@@ -174,7 +174,7 @@ const Form = () => {
                             })
                         }
                     </div>
-                    <button className={s.buttonD} type="submit">CREATE</button>
+                    <button className={style.buttonD} type="submit">CREATE</button>
                 </form>
             </div>
         </div>

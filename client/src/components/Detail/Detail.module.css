@@ -3,13 +3,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 60%;
+    background-image: url('../../assets/img-form.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .gridContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 1%;
-    background:var(--color-bg);
+    background-color: rgba(91, 0, 219, 0.7);
     width: 80%;
     border:1px solid var(--color-page-bg);
     border-radius: 2%;
@@ -18,16 +23,16 @@
 }
 
 .name{
-    color:rgba(0, 0, 0, 0.534);
+    color:rgba(0, 0, 0, 1);
     text-shadow: 1px 1px rgba(255,255,255,.15);  
-    font-family: sans-serif;
     margin: 0px;
     font-weight:800;
     text-transform:uppercase;
     margin-bottom:1rem;
-    font-size:100px;
+    font-size:5rem;
     grid-column-start:1;
     grid-column-end: 4;
+    text-align: center;
 }
 
 .divimg{
@@ -42,7 +47,7 @@
 }
 
 .img{
-    width: 95%;
+    width: 50%;
     border-radius: 2%;
 }
 
@@ -99,7 +104,7 @@
 }
 
 .genretitle{
-    color:rgba(0, 0, 0, 0.534);
+    color:rgba(0, 0, 0, 1);
     text-shadow: 1px 1px rgba(255,255,255,.15);  
     font-family: sans-serif;
     font-weight:800;
@@ -112,7 +117,7 @@
 }
 
 .title{
-    color:rgba(0, 0, 0, 0.534);
+    color:rgba(0, 0, 0, 1);
     text-shadow: 1px 1px rgba(255,255,255,.15);  
     font-family: sans-serif;
     font-weight:800;
@@ -123,7 +128,7 @@
 }
 
 .rate{
-    color:rgba(114, 99, 12, 0.61);
+    color:rgba(114, 99, 12, 1);
     text-shadow: 1px 1px rgba(255,255,255,.15);  
     font-family: sans-serif;
     font-weight:800;
@@ -133,7 +138,7 @@
     margin-top: 0px;
 }
 .genre{
-    color:rgba(0, 0, 0, 0.247);
+    color:rgba(0, 0, 0, 1);
     text-shadow: 1px 1px rgba(255,255,255,.15);  
     font-family: sans-serif;
     font-weight:800;
@@ -143,7 +148,7 @@
 }
 
 .rele{
-    color:rgba(0, 0, 0, 0.534);
+    color:rgba(0, 0, 0, 1);
     text-shadow: 1px 1px rgba(255,255,255,.15);  
     font-family: sans-serif;
     font-weight:800;
@@ -154,7 +159,7 @@
 }
 
 .released{
-    color:rgba(0, 0, 0, 0.247);
+    color:rgba(0, 0, 0, 1);
     text-shadow: 1px 1px rgba(255,255,255,.15);  
     font-family: sans-serif;
     font-weight:800;
@@ -164,7 +169,7 @@
 }
 
 .description{
-    color:rgba(0, 0, 0, 0.363);
+    color:rgba(0, 0, 0, 1);
     text-shadow: 1px 1px rgba(255,255,255,.15);  
     font-family: sans-serif;
     font-weight:800;
@@ -174,7 +179,7 @@
 }
 
 .unique{
-    color:rgba(0, 0, 0, 0.247);
+    color:rgba(0, 0, 0, 1);
     text-shadow: 1px 1px rgba(255,255,255,.15);  
     font-family: sans-serif;
     font-weight:800;
@@ -186,7 +191,7 @@
 }
 
 .dupli{
-    color:rgba(0, 0, 0, 0.247);
+    color:rgba(0, 0, 0, 1);
     text-shadow: 1px 1px rgba(255,255,255,.15);  
     font-family: sans-serif;
     font-weight:800;

@@ -1,6 +1,6 @@
 import s from "./Filter.module.css"
 import { useDispatch, useSelector } from "react-redux";
-import { getByGenre, getDbGames, getVideogames, getVideogamesByAlp, getVideogamesByRate, resetFilters } from "../../redux/actions";
+import { getByGenre, getDbGames, getVideogames, getVideogamesByAlp, getVideogamesByRate} from "../../redux/actions";
 
 const Filter = ({sort, setSort, setInput, setPage}) => {
     const dispatch = useDispatch();

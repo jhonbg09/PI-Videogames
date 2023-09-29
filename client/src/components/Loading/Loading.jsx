@@ -1,10 +1,10 @@
-import s from "./Loading.module.css"
-import loader from "../../assets/loader.gif"
+import style from "./Loading.module.css"
+import loader from "../../assets/sticker.webp"
 
 const Loading = () => {
     return (
-        <div className={s.loaderdiv}>
-            <img className={s.gif} src={loader} alt="loader"/>
+        <div className={style.loaderdiv}>
+            <img className={style.gif} src={loader} alt="loader"/>
         </div>
     )
 }

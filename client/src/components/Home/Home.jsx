@@ -32,7 +32,7 @@ const Home =() => {
     const max = videogames.length / perPage;
 
     return (
-        <>
+        <div>
             {
                 videogames.length ?
                 <div>
@@ -69,7 +69,7 @@ const Home =() => {
                     </div> 
                 </div> : <Loading/>
             } 
-        </>
+        </div>
     )
 };
 
