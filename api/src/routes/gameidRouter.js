@@ -2,7 +2,7 @@ const {Router} = require("express");
 const {findGameById} = require("../controllers/gamesController");
 
 const router = Router();
-
+//params
 router.get("/:id", async (req, res) => {
     const {id} = req.params;
     try {

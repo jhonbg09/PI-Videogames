@@ -4,7 +4,7 @@ const {getGenres} = require("../controllers/genresController.js");
 const {Genre} = require("../db");
 
 const router = Router();
-
+//query
 router.get("/", async (req,res) => {
     let {name} = req.query;
     let games;
